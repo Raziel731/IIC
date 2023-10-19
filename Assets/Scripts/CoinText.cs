@@ -22,7 +22,7 @@ public class CoinText : MonoBehaviour
 
     void Update()
     {
-        if (coinTotal >= 3)
+        if (coinTotal >= 10)
         {
             SceneManager.LoadScene(0);
         }
@@ -31,6 +31,6 @@ public class CoinText : MonoBehaviour
     public void AddScore()
     {
         coinTotal++;
-        coinText.text = "Coin: " + coinTotal;
+        coinText.text = "Score: " + coinTotal;
     }
 }
